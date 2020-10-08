@@ -1,11 +1,65 @@
+<!DOCTYPE html>
+
 <html>
-    <head>
-        <title>Essentials</title>
-    </head>
-    <body>
+
+<head>
+
+    <title>Calculate</title>
+
+</head>
+
+<body>
+
+<h2>Calculator</h2>
+
+<table border="1" style="width:100%">
+    <tr>
+        <td>Value 1:</td>
+        <td>
+            
+            <select id = "value1" >
+               <option value = "1">one</option>
+               <option value = "2">two</option>
+               <option value = "3">three</option>
+               <option value = "4">four</option>
+             </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Value 2:</td>
+        <td>
+             <select id = "value2" >
+               <option value = "1">one</option>
+               <option value = "2">two</option>
+               <option value = "3">three</option>
+               <option value = "4">four</option>
+             </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Operator:</td>
+        <td>
+            <select id="operator">
+                <option value="addition">+</option>
+                <option value="subtraction">-</option>
+                <option value="multiplication">*</option>
+                <option value="division">/</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td >Result:</td>
+        <td id="t01" >
+            <h1><input type="text" id="result" name="result" /></h1>
+        </td>
+    </tr>
+</table>
+
+<input type="submit" id="btn_sub" name="btn_sub" value="Submit" onclick="calculate();" />
+<input type="reset" id="btn_res" name="btn_res" value="Reset" />
 
 
-        <script src="essential.js"></script>
-    </body>
+<script src="script.js"></script>
+</body>
 
 </html>
